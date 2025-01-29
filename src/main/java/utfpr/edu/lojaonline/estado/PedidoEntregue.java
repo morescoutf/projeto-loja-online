@@ -9,6 +9,7 @@ import utfpr.edu.lojaonline.Pedido;
  * @author HENRIQUE
  */
 
+
 public class PedidoEntregue implements PedidoState {
     @Override
     public void avancarEstado(Pedido pedido) {

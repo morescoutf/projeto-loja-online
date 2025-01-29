@@ -12,12 +12,12 @@ import utfpr.edu.lojaonline.Pedido;
 public class PedidoEnviado implements PedidoState {
     @Override
     public void avancarEstado(Pedido pedido) {
-        System.out.println("Pedido enviado: avançando para estado ENTREGUE.");
-        pedido.setEstadoAtual(new PedidoEntregue()); // Transição de estado
+        pedido.setEstadoAtual(new PedidoEntregue());
+        System.out.println("Estado atualizado: ENTREGUE.");
     }
-    
+
     @Override
     public void cancelarPedido(Pedido pedido) {
-        System.out.println("Pedido já enviado: cancelamento não é permitido.");
+        System.out.println("Pedido já enviado: cancelamento não permitido.");
     }
 }

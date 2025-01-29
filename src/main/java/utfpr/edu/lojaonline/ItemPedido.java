@@ -10,12 +10,20 @@ package utfpr.edu.lojaonline;
  */
 public class ItemPedido {
     private int quantidade;
-    private double precoTotal;
-    private Produto produto;
+    private Produto produto; // Relação 1:1 com Produto
+
+    public ItemPedido(Produto produto, int quantidade) {
+        this.produto = produto;
+        this.quantidade = quantidade;
+    }
 
     public double calcularSubtotal() {
-        return precoTotal;
+        return produto.calculaPreco() * quantidade;
     }
 
     // Getters e Setters
+
+    Object getProduto() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
 }
