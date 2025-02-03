@@ -20,4 +20,7 @@ public class Cliente {
     }
 
     // Getters e Setters
+
+    public void setNome(String joao_Vitor) {
+    }
 }

@@ -12,6 +12,10 @@ package utfpr.edu.lojaonline.pagamento;
 public abstract class Pagamento {
     private double valor;
 
+    public void setValor(double valor) {
+        this.valor = valor;
+    }
+
     public void processaPagamento() {
         System.out.println("Pagamento processado: R$" + valor);
     }

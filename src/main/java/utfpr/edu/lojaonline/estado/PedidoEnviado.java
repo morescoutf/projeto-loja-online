@@ -18,6 +18,6 @@ public class PedidoEnviado implements PedidoState {
 
     @Override
     public void cancelarPedido(Pedido pedido) {
-        System.out.println("Pedido já enviado: cancelamento não permitido.");
+        System.out.println("Pedido ja enviado: cancelamento nao permitido.");
     }
 }

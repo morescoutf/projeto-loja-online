@@ -10,6 +10,7 @@ import java.util.Date;
 import java.util.ArrayList;
 import java.util.List;
 import utfpr.edu.lojaonline.estado.PedidoEnviado;
+import utfpr.edu.lojaonline.pagamento.PagamentoCartao;
 
 /**
  *
@@ -20,11 +21,11 @@ public class Pedido {
     private int idPedido;
     private Date data;
     private PedidoState estadoAtual;
-    private List<ItemPedido> itens = new ArrayList<>(); // Relação 1:N com ItemPedido
-    private Pagamento pagamento; // Relação 1:1 com Pagamento
+    private List<ItemPedido> itens = new ArrayList<>();
+    private Pagamento pagamento; 
 
     public Pedido() {
-        this.estadoAtual = new PedidoEnviado(); // Estado inicial
+        this.estadoAtual = new PedidoEnviado(); 
     }
 
     public void adicionarItem(Produto produto, int quantidade) {
@@ -53,4 +54,8 @@ public class Pedido {
     }
 
     // Getters e Setters
+
+    public void setPagamento(PagamentoCartao pagamento) {
+        
+    }
 }

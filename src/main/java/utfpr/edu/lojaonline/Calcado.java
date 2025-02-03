@@ -12,5 +12,12 @@ public class Calcado extends Produto {
     private int numero;
     private String material;
 
-    // Getters e Setters
+    // Setters
+    public void setNumero(int numero) {
+        this.numero = numero;
+    }
+
+    public void setMaterial(String material) {
+        this.material = material;
+    }
 }

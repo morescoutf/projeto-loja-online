@@ -8,21 +8,23 @@ package utfpr.edu.lojaonline;
  *
  * @author HENRIQUE
  */
+
 public class Produto {
     private String nome;
     private double preco;
 
-    public void cadastraProduto() {
-        System.out.println("Produto cadastrado: " + nome);
+    // Setters adicionados
+    public void setNome(String nome) {
+        this.nome = nome;
     }
 
-    public void atualizaProduto() {
-        System.out.println("Produto atualizado: " + nome);
+    public void setPreco(double preco) {
+        this.preco = preco;
     }
 
     public double calculaPreco() {
-        return preco;
+        return this.preco;
     }
+}
 
     // Getters e Setters
-}

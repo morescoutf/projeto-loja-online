@@ -13,11 +13,11 @@ import utfpr.edu.lojaonline.Pedido;
 public class PedidoEntregue implements PedidoState {
     @Override
     public void avancarEstado(Pedido pedido) {
-        System.out.println("Pedido já entregue: não é possível avançar.");
+        System.out.println("Pedido ja entregue: nao eh possivel avancar.");
     }
 
     @Override
     public void cancelarPedido(Pedido pedido) {
-        System.out.println("Pedido já entregue: cancelamento impossível.");
+        System.out.println("Pedido ja entregue: cancelamento impossivel.");
     }
 }
