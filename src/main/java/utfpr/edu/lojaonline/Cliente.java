@@ -9,14 +9,14 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Cliente {
-    private String nome;
+    private String Nome;
     private String endereco;
     private String email;
     private List<Pedido> pedidos = new ArrayList<>(); // Relação 1:N com Pedido
 
     public void realizaPedido(Pedido pedido) {
         pedidos.add(pedido);
-        System.out.println("Pedido realizado por: " + nome);
+        System.out.println("Pedido realizado por: " + Nome);
     }
 
     // Getters e Setters
